@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <property name="LOG_LEVEL" value="INFO"/>
+    <property name="LOG_PATH" value="log"/>
+    <property name="LOG_FILE" value="management_system_cli.log"/>
+    <property name="LOG_HISTORY" value="management_system_cli.%d{yyyy-MM-dd}.log"/>
+
+    <!-- 日志输出到控制台 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 日志输出到文件 -->
+    <springProfile name="!dev">
+        <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${LOG_PATH}/${LOG_FILE}</file>
+            <encoder>
+                <pattern>${FILE_LOG_PATTERN}</pattern>
+            </encoder>
+            <rolllingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${LOG_PATH}/${LOG_HISTORY}</fileNamePattern>
+                <maxHistory>30</maxHistory>
+            </rolllingPolicy>
+        </appender>
+    </springProfile>
+
+    <!-- 异步到文件 -->
+    <springProfile name="!dev">
+        <appender name="asyncFileAppender" class="ch.qos.logback.classic.AsyncAppender">
+            <discardingThreshold>0</discardingThreshold>
+            <queueSize>500</queueSize>
+            <appender-ref ref="FILE"/>
+        </appender>
+    </springProfile>
+
+    <!-- 开发环境：控制台输出 -->
+    <springProfile name="dev">
+        <!-- 打印 SQL -->
+        <logger name="ac.hurley.managementsystemcli" level="DEBUG"/>
+        <root level="${LOG_LEVEL}">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <!-- 输出格式 appender -->
+    <springProfile name="!dev">
+        <root level="${LOG_LEVEL}">
+            <appender-ref ref="CONSOLE"/>
+            <appender-ref ref="asyncFileAppender"/>
+        </root>
+    </springProfile>
+
+</configuration>
