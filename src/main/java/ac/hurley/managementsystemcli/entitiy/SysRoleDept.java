@@ -5,18 +5,16 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 文件上传实体类
+ * 角色部门实体类
  */
-@EqualsAndHashCode(callSuper = true)
 @Data
-@TableName("sys_files")
-public class SysFiles extends BaseEntity implements Serializable {
+@TableName("sys_role_dept")
+public class SysRoleDept extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -27,23 +25,20 @@ public class SysFiles extends BaseEntity implements Serializable {
     private String id;
 
     /**
-     * URL 地址
+     * 角色 Id
      */
-    @TableField("url")
-    private String url;
-
-    @TableField(value = "create_date", fill = FieldFill.INSERT)
-    private Date createDate;
+    @TableField("role_id")
+    private String roleId;
 
     /**
-     * 文件名称
+     * 菜单权限 Id
      */
-    @TableField("file_name")
-    private String fileName;
+    @TableField("dept_id")
+    private String deptId;
 
     /**
-     * 文件路径
+     * 创建时间
      */
-    @TableField("file_path")
-    private String filePath;
+    @TableField(value = "create_time", fill = FieldFill.INSERT)
+    private Date createTime;
 }

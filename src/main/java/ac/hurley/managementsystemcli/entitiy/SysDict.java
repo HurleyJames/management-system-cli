@@ -11,12 +11,12 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 文件上传实体类
+ * 字典实体类
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
-@TableName("sys_files")
-public class SysFiles extends BaseEntity implements Serializable {
+@TableName("sys_dict")
+public class SysDict extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -27,23 +27,19 @@ public class SysFiles extends BaseEntity implements Serializable {
     private String id;
 
     /**
-     * URL 地址
+     * 字典名称
      */
-    @TableField("url")
-    private String url;
-
-    @TableField(value = "create_date", fill = FieldFill.INSERT)
-    private Date createDate;
+    @TableField("name")
+    private String name;
 
     /**
-     * 文件名称
+     * 备注
      */
-    @TableField("file_name")
-    private String fileName;
+    private String remark;
 
     /**
-     * 文件路径
+     * 创建时间
      */
-    @TableField("file_path")
-    private String filePath;
+    @TableField(value = "create_time", fill = FieldFill.INSERT)
+    private Date createTime;
 }
