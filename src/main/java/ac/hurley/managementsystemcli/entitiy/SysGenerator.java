@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 生成代码
+ * 生成代码类
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
