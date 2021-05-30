@@ -4,7 +4,7 @@ import ac.hurley.managementsystemcli.common.DataResult;
 import ac.hurley.managementsystemcli.common.utils.SpringContextUtils;
 import ac.hurley.managementsystemcli.entitiy.SysJob;
 import ac.hurley.managementsystemcli.entitiy.SysJobLog;
-import ac.hurley.managementsystemcli.service.SysJobLogService;
+import ac.hurley.managementsystemcli.service.JobLogService;
 import org.apache.commons.lang.StringUtils;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -21,10 +21,10 @@ public class ScheduleJob extends QuartzJobBean {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    final SysJobLogService sysJobLogService;
+    final JobLogService jobLogService;
 
-    public ScheduleJob(SysJobLogService sysJobLogService) {
-        this.sysJobLogService = sysJobLogService;
+    public ScheduleJob(JobLogService jobLogService) {
+        this.jobLogService = jobLogService;
     }
 
     @Override
@@ -32,7 +32,7 @@ public class ScheduleJob extends QuartzJobBean {
         SysJob sysJob = (SysJob) jobExecutionContext.getMergedJobDataMap().get(SysJob.JOB_PARAM_KEY);
 
         // 获取 Spring Bean
-        SysJobLogService sysJobLogService = (SysJobLogService) SpringContextUtils.getBean("sysJobLogService");
+        JobLogService jobLogService = (JobLogService) SpringContextUtils.getBean("sysJobLogService");
 
         // 数据库保存执行记录
         SysJobLog log = new SysJobLog();
@@ -71,8 +71,8 @@ public class ScheduleJob extends QuartzJobBean {
             log.setError(StringUtils.substring(e.toString(), 0, 2000));
             e.printStackTrace();
         } finally {
-            assert sysJobLogService != null;
-            sysJobLogService.save(log);
+            assert jobLogService != null;
+            jobLogService.save(log);
         }
     }
 
