@@ -18,3 +18,4 @@ public interface DictDetailService extends IService<SysDictDetail> {
      * @return
      */
     IPage<SysDictDetail> listByPage(Page<SysDictDetail> page, String dictId);
+}
