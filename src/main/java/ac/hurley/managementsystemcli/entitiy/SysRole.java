@@ -1,5 +1,7 @@
 package ac.hurley.managementsystemcli.entitiy;
 
+import ac.hurley.managementsystemcli.vo.res.DeptResVO;
+import ac.hurley.managementsystemcli.vo.res.PermissionResVO;
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -68,6 +70,12 @@ public class SysRole extends BaseEntity implements Serializable {
 
     @TableField(exist = false)
     private List<String> permissions;
+
+    @TableField(exist = false)
+    private List<PermissionResVO> permissionResVOS;
+
+    @TableField(exist = false)
+    private List<DeptResVO> deptResVOS;
 
     /**
      * 部门列表
