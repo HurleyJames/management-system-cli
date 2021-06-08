@@ -25,14 +25,14 @@ public interface PermissionService extends IService<SysPermission> {
      *
      * @param permissionId
      */
-    void deleted(String permissionId);
+    void deletePermission(String permissionId);
 
     /**
      * 获取所有权限
      *
      * @return
      */
-    List<SysPermission> selectAll();
+    List<SysPermission> selectAllPermission();
 
     /**
      * 根据 userId 获取对应的权限
