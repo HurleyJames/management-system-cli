@@ -2,7 +2,7 @@ package ac.hurley.managementsystemcli.service;
 
 import ac.hurley.managementsystemcli.entitiy.SysGenerator;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import org.springframework.data.domain.Page;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 /**
  * 生成代码 Service 类
