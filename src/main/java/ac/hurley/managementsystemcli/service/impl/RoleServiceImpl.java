@@ -99,7 +99,7 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, SysRole> implements
      * @return
      */
     @Override
-    public SysRole roleInfo(String id) {
+    public SysRole getRoleInfo(String id) {
         SysRole sysRole = roleMapper.selectById(id);
         if (sysRole == null) {
             log.error("传入的 id:{} 不合法", id);

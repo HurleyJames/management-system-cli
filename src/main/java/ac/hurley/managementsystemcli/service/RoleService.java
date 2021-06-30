@@ -30,7 +30,7 @@ public interface RoleService extends IService<SysRole> {
      * @param id
      * @return
      */
-    SysRole roleInfo(String id);
+    SysRole getRoleInfo(String id);
 
     /**
      * 根据 id 删除
