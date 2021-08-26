@@ -12,6 +12,8 @@ import java.util.Date;
 
 /**
  * 字典实体类
+ *
+ * @author hurley
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

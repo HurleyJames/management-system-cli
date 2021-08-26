@@ -9,6 +9,8 @@ import java.util.Date;
 
 /**
  * 生成代码类
+ *
+ * @author hurley
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

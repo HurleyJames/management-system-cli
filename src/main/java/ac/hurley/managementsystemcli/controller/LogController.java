@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * @author hurley
+ */
 @RequestMapping("/sys")
 @Api(tags = "系统模块-系统操作日志管理")
 @RestController

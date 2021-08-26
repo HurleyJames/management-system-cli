@@ -4,6 +4,8 @@ import java.util.List;
 
 /**
  * 代码生成表的数据
+ *
+ * @author hurley
  */
 public class TableEntity {
 

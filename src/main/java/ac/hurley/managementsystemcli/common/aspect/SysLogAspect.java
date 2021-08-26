@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * 日志切面
+ *
+ * @author hurley
  */
 @Aspect
 @Component

@@ -18,6 +18,8 @@ import java.util.Set;
 
 /**
  * Http Session 管理 Service 类
+ *
+ * @author hurley
  */
 @Service
 public class HttpSessionService {

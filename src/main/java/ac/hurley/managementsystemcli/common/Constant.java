@@ -2,6 +2,8 @@ package ac.hurley.managementsystemcli.common;
 
 /**
  * 静态常量类
+ *
+ * @author hurley
  */
 public class Constant {
 

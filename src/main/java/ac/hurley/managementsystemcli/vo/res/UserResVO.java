@@ -3,6 +3,9 @@ package ac.hurley.managementsystemcli.vo.res;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+/**
+ * @author hurley
+ */
 @Data
 public class UserResVO {
 

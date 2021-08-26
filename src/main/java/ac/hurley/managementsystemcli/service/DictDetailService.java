@@ -8,11 +8,14 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * 数据字典细节 Service 类
+ *
+ * @author hurley
  */
 public interface DictDetailService extends IService<SysDictDetail> {
 
     /**
      * 分页
+     *
      * @param page
      * @param dictId
      * @return

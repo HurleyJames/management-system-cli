@@ -19,6 +19,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * @author hurley
+ */
 @RequestMapping("/sysDict")
 @RestController
 @Api(tags = "字典管理")

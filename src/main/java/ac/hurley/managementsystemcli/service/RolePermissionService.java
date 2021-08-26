@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * 角色权限关联 Service 类
+ *
+ * @author hurley
  */
 public interface RolePermissionService extends IService<SysRolePermission> {
 

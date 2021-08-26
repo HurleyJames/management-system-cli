@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * @author hurley
+ */
 @Data
 public class DeptResVO {
 

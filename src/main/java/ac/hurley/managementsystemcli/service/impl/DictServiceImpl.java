@@ -17,6 +17,8 @@ import java.util.List;
 
 /**
  * 数据字典 Service 实现类
+ *
+ * @author hurley
  */
 @Service("dictService")
 public class DictServiceImpl extends ServiceImpl<DictMapper, SysDict> implements DictService {

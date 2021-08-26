@@ -13,6 +13,8 @@ import java.util.List;
 
 /**
  * 角色权限关联 Service 实现类
+ *
+ * @author hurley
  */
 @Service
 public class RolePermissionServiceImpl extends ServiceImpl<RolePermissionMapper, SysRolePermission> implements RolePermissionService {

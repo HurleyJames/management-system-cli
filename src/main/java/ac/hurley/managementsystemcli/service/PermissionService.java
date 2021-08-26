@@ -9,6 +9,8 @@ import java.util.Set;
 
 /**
  * 菜单权限 Service 类
+ *
+ * @author hurley
  */
 public interface PermissionService extends IService<SysPermission> {
 

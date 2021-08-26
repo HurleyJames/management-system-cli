@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 
 /**
  * 生成代码 Service 类
+ *
+ * @author hurley
  */
 public interface SysGeneratorService {
 

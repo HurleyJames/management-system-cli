@@ -2,6 +2,9 @@ package ac.hurley.managementsystemcli.common.annotation;
 
 import java.lang.annotation.*;
 
+/**
+ * @author hurley
+ */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

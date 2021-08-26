@@ -13,6 +13,8 @@ import javax.annotation.Resource;
 
 /**
  * 首页
+ *
+ * @author hurley
  */
 @RestController
 @RequestMapping("/sys")
@@ -27,7 +29,7 @@ public class HomeController {
     @GetMapping("/home")
     @ApiOperation(value = "获取首页数据接口")
     public DataResult getHomeInfo() {
-        // 通过 access_toklen 获取当前用户的 userId
+        // 通过 access_token 获取当前用户的 userId
         String userId = httpSessionService.getCurrentUserId();
         DataResult result = DataResult.success();
         result.setData(homeService.getHomeInfo(userId));

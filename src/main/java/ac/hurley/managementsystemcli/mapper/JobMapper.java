@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * 定时任务 Mapper 接口
+ *
+ * @author hurley
  */
 public interface JobMapper extends BaseMapper<SysJob> {
 }

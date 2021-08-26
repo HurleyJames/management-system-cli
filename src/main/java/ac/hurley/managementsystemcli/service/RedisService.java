@@ -9,6 +9,10 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+
+/**
+ * @author hurley
+ */
 @Service
 public class RedisService {
 

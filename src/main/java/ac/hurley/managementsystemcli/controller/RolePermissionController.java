@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 
+/**
+ * @author hurley
+ */
 @RequestMapping("/sys")
 @RestController
 @Api(tags = "组织管理-角色和菜单关联接口")

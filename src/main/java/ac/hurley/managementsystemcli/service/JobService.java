@@ -7,6 +7,8 @@ import java.util.List;
 
 /**
  * 定时任务 Service 类
+ *
+ * @author hurley
  */
 public interface JobService extends IService<SysJob> {
 

@@ -8,6 +8,8 @@ import java.util.List;
 
 /**
  * 部门 Service 类
+ *
+ * @author hurley
  */
 public interface DeptService extends IService<SysDept> {
 

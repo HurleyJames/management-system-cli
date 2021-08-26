@@ -18,6 +18,8 @@ import java.util.List;
 
 /**
  * 定时任务 Service 实现类
+ *
+ * @author hurley
  */
 @Service("jobService")
 public class JobServiceImpl extends ServiceImpl<JobMapper, SysJob> implements JobService {

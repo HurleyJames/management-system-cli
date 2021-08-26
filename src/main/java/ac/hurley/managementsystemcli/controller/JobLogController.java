@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
+/**
+ * @author hurley
+ */
 @RequestMapping("/sysJobLog")
 @RestController
 @Api(tags = "定时任务日志")

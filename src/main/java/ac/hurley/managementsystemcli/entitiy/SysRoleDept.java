@@ -11,6 +11,8 @@ import java.util.Date;
 
 /**
  * 角色部门实体类
+ *
+ * @author hurley
  */
 @Data
 @TableName("sys_role_dept")

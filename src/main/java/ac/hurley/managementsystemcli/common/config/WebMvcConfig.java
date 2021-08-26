@@ -16,6 +16,8 @@ import java.util.List;
 
 /**
  * Spring MVC 配置
+ *
+ * @author hurley
  */
 @Configuration
 @EnableConfigurationProperties(FileUploadConfig.class)

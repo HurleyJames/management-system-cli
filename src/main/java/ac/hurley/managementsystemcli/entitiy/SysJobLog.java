@@ -10,6 +10,8 @@ import java.util.Date;
 
 /**
  * 定时任务日志实体类
+ *
+ * @author hurley
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

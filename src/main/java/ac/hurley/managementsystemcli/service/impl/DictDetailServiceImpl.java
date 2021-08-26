@@ -17,6 +17,8 @@ import javax.annotation.Resource;
 
 /**
  * 数据字典 Detail Service 实现类
+ *
+ * @author hurley
  */
 public class DictDetailServiceImpl extends ServiceImpl<DictDetailMapper, SysDictDetail> implements DictDetailService {
 

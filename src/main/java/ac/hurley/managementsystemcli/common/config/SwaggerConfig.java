@@ -15,6 +15,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Swagger2 生成 API 文档
+ *
+ * @author hurley
  */
 @Configuration
 @EnableSwagger2

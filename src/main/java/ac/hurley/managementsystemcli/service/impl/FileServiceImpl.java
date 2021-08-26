@@ -19,6 +19,8 @@ import java.util.*;
 
 /**
  * 文件上传 Service 实现类
+ *
+ * @author hurley
  */
 @EnableConfigurationProperties(FileUploadConfig.class)
 @Service("filesService")

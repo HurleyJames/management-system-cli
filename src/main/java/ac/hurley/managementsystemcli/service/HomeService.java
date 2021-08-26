@@ -4,6 +4,8 @@ import ac.hurley.managementsystemcli.vo.res.HomeResVO;
 
 /**
  * 首页 Service 类
+ *
+ * @author hurley
  */
 public interface HomeService {
 

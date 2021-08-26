@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * 操作日志 Mapper 接口
+ *
+ * @author hurley
  */
 public interface LogMapper extends BaseMapper<SysLog> {
 }

@@ -10,11 +10,14 @@ import java.util.List;
 
 /**
  * 文件上传 Service 类
+ *
+ * @author hurley
  */
 public interface FileService extends IService<SysFiles> {
 
     /**
      * 保存文件
+     *
      * @param file
      * @return
      */
@@ -22,6 +25,7 @@ public interface FileService extends IService<SysFiles> {
 
     /**
      * 根据 Id 移除文件
+     *
      * @param ids
      */
     void removeByIdsAndFiles(List<String> ids);

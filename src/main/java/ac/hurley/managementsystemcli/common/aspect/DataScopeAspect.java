@@ -5,6 +5,9 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
+/**
+ * @author hurley
+ */
 @Aspect
 @Component
 public class DataScopeAspect {

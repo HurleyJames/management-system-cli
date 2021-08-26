@@ -23,6 +23,8 @@ import java.util.zip.ZipOutputStream;
 
 /**
  * 本项目的代码生成器工具类
+ *
+ * @author hurley
  */
 public class GenerateUtils {
 

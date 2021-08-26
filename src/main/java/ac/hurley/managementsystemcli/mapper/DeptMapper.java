@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * 部门 Mapper 接口
+ *
+ * @author hurley
  */
 public interface DeptMapper extends BaseMapper<SysDept> {
 }

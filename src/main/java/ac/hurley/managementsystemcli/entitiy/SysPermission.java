@@ -12,6 +12,8 @@ import java.util.Date;
 
 /**
  * 权限菜单实体类
+ *
+ * @author hurley
  */
 @Data
 public class SysPermission implements Serializable {

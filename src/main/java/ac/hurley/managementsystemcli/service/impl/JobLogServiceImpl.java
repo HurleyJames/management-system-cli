@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 /**
  * 任务日志 Service 实现类
+ *
+ * @author hurley
  */
 @Service("jobLogService")
 public class JobLogServiceImpl extends ServiceImpl<JobLogMapper, SysJobLog> implements JobLogService {

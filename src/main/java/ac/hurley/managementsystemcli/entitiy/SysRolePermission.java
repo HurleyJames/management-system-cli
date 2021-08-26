@@ -10,6 +10,8 @@ import java.util.Date;
 
 /**
  * 角色权限实体类
+ *
+ * @author hurley
  */
 @Data
 public class SysRolePermission implements Serializable {

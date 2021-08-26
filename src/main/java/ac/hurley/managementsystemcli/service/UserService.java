@@ -9,6 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * 用户 Service 类
+ *
+ * @author hurley
  */
 public interface UserService extends IService<SysUser> {
 

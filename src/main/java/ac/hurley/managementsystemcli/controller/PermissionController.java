@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 
+/**
+ * @author hurley
+ */
 @RequestMapping("/sys")
 @RestController
 @Api(tags = "组织模块-菜单权限管理")
